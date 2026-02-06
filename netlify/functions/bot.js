@@ -1,6 +1,4 @@
-﻿const fetch = require("node-fetch");
-
-const BOT_TOKEN = process.env.BOT_TOKEN;
+﻿const BOT_TOKEN = process.env.BOT_TOKEN;
 const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
 exports.handler = async function (event) {
@@ -28,6 +26,7 @@ exports.handler = async function (event) {
 
   return { statusCode: 200, body: "OK" };
 };
+
 
 
 
